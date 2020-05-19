@@ -1,0 +1,1 @@
+This repository is a part of a lesson from The Odin Project where I recreate the Google Homepage.
