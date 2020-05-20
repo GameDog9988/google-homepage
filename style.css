@@ -47,6 +47,24 @@ header a:hover {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
 }
 
+.right-nav input {
+  display: none;
+}
+
+.right-nav input + label {
+  display: inline-block;
+  padding: 1rem;
+  background-image: url(https://ssl.gstatic.com/gb/images/i1_1967ca6a.png);
+  background-size: 528px 68px;
+  background-position: -132px -38px;
+  opacity: 0.55;
+  vertical-align: middle;
+}
+
+.right-nav label:hover {
+  opacity: 1;
+}
+
 main {
   display: flex;
   flex-direction: column;
