@@ -2,6 +2,7 @@ html,
 body {
   scroll-behavior: smooth;
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
 }
 
 .container {
@@ -71,7 +72,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 10rem;
+  margin: 5rem;
   padding: 1rem;
 }
 
@@ -81,13 +82,29 @@ main a {
   padding: 1rem;
 }
 
-main input {
+.search-input-container {
   width: 500px;
   margin: 1rem auto;
   border-radius: 50px;
   height: 45px;
-  padding: 1rem;
   border: 1px solid gainsboro;
+}
+
+.search-input-container:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.search-input-container input {
+  line-height: 34px;
+  height: 34px !important;
+  border: none;
+  position: relative;
+  width: 450px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-left: 15px;
+  left: 10px;
 }
 
 .google-logo {
@@ -95,9 +112,38 @@ main input {
   margin: auto;
 }
 
+.search-icon {
+  height: 18px;
+  position: absolute;
+  margin-left: -5px;
+  margin-top: 12px;
+}
+
+.below-search-btns button {
+  background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.below-search-btns button:hover {
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+
 footer {
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0px;
   line-height: 3rem;
   display: flex;
